@@ -1,0 +1,20 @@
+Push to exsiting directory:
+1. Navigate to exsiting folder
+2. git status
+3. git add . (dot for all files)
+4. git commit -m "comment for changings"
+5. git push origin dev(branch name)
+
+
+
+Push to Directory:
+1. git init
+2. git add Readmd
+3. git add .
+4. git commit -m
+5. git add remote origin (directory link)
+6. git push origin dev
+
+
+Pull New changing from remote directory
+1. git pull
