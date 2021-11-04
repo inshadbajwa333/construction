@@ -14,3 +14,7 @@ Push to Directory:
 4. git commit -m
 5. git add remote origin (directory link)
 6. git push origin dev
+
+
+Pull New changing from remote directory
+1. git pull
