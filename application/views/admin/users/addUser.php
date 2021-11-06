@@ -3,7 +3,7 @@
             <div class="page-header">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Users</h3>
+                  <h3>Users </h3>
                 </div>
                
               </div>

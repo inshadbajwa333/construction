@@ -42,7 +42,7 @@ class Login extends CI_Controller {
         //  redirect(base_url('dashboard'), 'refresh');
 
          $user=$this->session->userdata('loginUser');
-          redirect(base_url('dashboard'));
+          redirect(base_url('all-users'));
        
 
     }
@@ -55,59 +55,5 @@ class Login extends CI_Controller {
 
     }
 
-    public function sendotp()
-    {
-        $post = $this->input->post();
-        $ch3 = curl_init();
-        curl_setopt($ch3, CURLOPT_URL, $this->api_url . "rest/api/v1/admin/check/emirates/id?emiratesId=" . $post['user_phone']);
-        curl_setopt($ch3, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch3, CURLOPT_CUSTOMREQUEST, "GET");
-        $response3 = curl_exec($ch3);
-        $httpcode = curl_getinfo($ch3, CURLINFO_HTTP_CODE);
-        curl_close($ch3);
-
-        // print_r($response3);
-        if ($httpcode == "200" or $httpcode == "201")
-        {
-            $data = true;
-        }
-        else
-        {
-            $data = false;
-        }
-        // echo json_encode($data);
-        echo json_encode(array("status" => $data,"data" => $post['user_phone']));
-    }
-      public function verifyotp()
-    {
-       $response=array();
-      $post=$this->input->post();
-         $ch = curl_init();
-        $loginUrl = $this->api_url.'rest/api/v1/admin/verify/otp';
-        curl_setopt($ch, CURLOPT_URL, $loginUrl);
-        curl_setopt($ch, CURLOPT_POST, 1);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, 'eId='.$post['eId'].'&otp='.$post['otp']);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        $httpcode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-        $store = curl_exec($ch);
-        curl_close($ch);
-        $json = json_decode($store, true);
-
-
-
-        if($json['statusCode']==200) {
-
-        $userData=$json['result'];
-        $this->session->set_userdata('loginUser',$userData);
-                $status = true;
-            }
-            else
-            {
-            $status = false;
-          }
-
-    echo json_encode(array("status" => $status,"data" => $json));
-
-    }
 
 }

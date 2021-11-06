@@ -1,5 +1,5 @@
    <!-- footer start-->
-   <footer class="footer">
+   <!-- <footer class="footer">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-6 footer-copyright">
@@ -12,7 +12,7 @@
           </div>
         </footer>
       </div>
-    </div>
+    </div> -->
     <!-- latest jquery-->
     <script src="<?=base_url()?>assets/admin/js/jquery-3.5.1.min.js"></script>
     <!-- feather icon js-->
