@@ -53,7 +53,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Main';
 
 
-$route['visa/international-tourist-visa'] = "Main/visas";
 
 $route['login'] = "Login";
 
@@ -64,7 +63,8 @@ $route['all-users'] = "admin/Users";
 $route['add-work/(:any)'] = "admin/Works/addWork/$1";
 $route['all-work/(:any)'] = "admin/Works/viewAllWork/$1";
 
-
+$route['construction'] = "admin/Works/addWork/$1";
+$route['construction-work'] = "Main/construction";
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

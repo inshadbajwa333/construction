@@ -4,7 +4,7 @@
             <div class="page-header">
               <div class="row">
                 <div class="col-sm-6">
-                  <h3>Users</h3>
+                  <h3>Users | <a href="<?=base_url()?>add-user">Add New User</a></h3>
                 </div>
                
               </div>

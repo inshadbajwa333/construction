@@ -2,7 +2,7 @@
         
         <div class="block1">
             
-            <div class="row " ><img class="ss" src="<?php echo base_url('/assets/');?>imgs/logo.jpg" width="500" height="600"></div>
+            <div class="row " ><img class="ss" src="<?php echo base_url()?>assets/theme/imgs/logo.jpg" width="500" height="600"></div>
             <!-- <div class="row " ><h1 class="sss">REFORMAS OBASY</h1></div>
             <div class="row " ><p class="ss">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></div> -->
             <div class="row">
