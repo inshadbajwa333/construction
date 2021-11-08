@@ -39,14 +39,14 @@
                           <label class="form-label" for="validationCustom03">After Work</label>
                           <input class="form-control" id="validationCustom03" type="file" placeholder="Image" required="" name="after[]" multiple required>
                         </div>
-                        <div class="col-md-6">
-                          <label class="form-label" for="validationCustom03">Before Eplaination </label>
+                        <div class="col-md-12">
+                          <label class="form-label" for="validationCustom03">Explaination </label>
                           <textarea class="form-control" id="validationCustom03" type="text"  required="" name="beforeExp" required></textarea>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                           <label class="form-label" for="validationCustom03">After Eplaination</label>
                           <textarea class="form-control" id="validationCustom03" type="text"  required="" name="afterExp" required></textarea>
-                        </div>
+                        </div> -->
                       </div>
                       
                       <br>

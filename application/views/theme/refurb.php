@@ -141,8 +141,6 @@ foreach(unserialize($data1['w_before']) as $data2):  ?>
 <br>
 
 
-
-                        <?=$data1['w_before_explain']?>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -171,9 +169,10 @@ foreach(unserialize($data1['w_after']) as $data2):  ?>
 
 <!-- </div> -->
 <br>
-<?=$data1['w_after_explain']?>
+
                     </div>
                 </div>
+                <p style="padding:20px;"> <?=$data1['w_before_explain']?> </p>
             </div>
             <br>
             <div style="margin:auto;text-align:center;"><a href="<?=base_url()?>contact" class="btn btn-primary">Contact</a>

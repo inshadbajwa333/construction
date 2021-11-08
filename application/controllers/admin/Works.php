@@ -106,7 +106,6 @@ class Works extends MY_Controller {
         $data = array(
             'uId' => $this->input->post('uId'),
             'w_before_explain' => $this->input->post('beforeExp'),
-            'w_after_explain' => $this->input->post('afterExp'),
             'w_before' => serialize($data['before']),
             'w_after' => serialize($data['after']),
             'w_cat' => $this->input->post('w_cat')

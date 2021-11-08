@@ -39,7 +39,7 @@
                           <img src="<?=base_url()?>assets/works/<?php print_r($data2); ?>" style="width:10%;">
                           <?php endforeach; ?></td>
                           <td><?=$data1['w_before_explain']?></td>
-                          <td><?=$data1['w_after_explain']?></td>
+                          <!-- <td><?=$data1['w_after_explain']?></td> -->
                         </tr>
                         <?php endforeach;?>
                                             <?php }?>
