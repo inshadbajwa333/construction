@@ -18,11 +18,47 @@ class Main extends CI_Controller {
     public function construction()
     {        
         $data['title'] = "Construction work";
-        $data['works']=$this->m->getAll('works',null,null,null,null,'w_id','DESC');
+        $data['works']=$this->m->getAll('works',null,array("w_cat"=>"const"),null,null,'w_id','DESC');
        $data['page']='construction';
         $this->load->view('theme/template/contents',$data);
 
     }
+
+
+    public function painting()
+    {        
+        $data['title'] = "Painting Works";
+        $data['works']=$this->m->getAll('works',null,array("w_cat"=>"painting"),null,null,'w_id','DESC');
+       $data['page']='painting';
+        $this->load->view('theme/template/contents',$data);
+
+    }
+    public function refurb()
+    {        
+        $data['title'] = "Refurb Works";
+        $data['works']=$this->m->getAll('works',null,array("w_cat"=>"refurb"),null,null,'w_id','DESC');
+       $data['page']='refurb';
+        $this->load->view('theme/template/contents',$data);
+
+    }
+
+    public function other()
+    {        
+        $data['title'] = "Other Works";
+        $data['works']=$this->m->getAll('works',null,array("w_cat"=>"other"),null,null,'w_id','DESC');
+       $data['page']='other';
+        $this->load->view('theme/template/contents',$data);
+
+    }
+
+    public function contact()
+    {        
+        $data['title'] = "Contact Us";
+       $data['page']='contact';
+        $this->load->view('theme/template/contents',$data);
+
+    }
+
 
     
   

@@ -65,6 +65,10 @@ $route['all-work/(:any)'] = "admin/Works/viewAllWork/$1";
 
 $route['construction'] = "admin/Works/addWork/$1";
 $route['construction-work'] = "Main/construction";
+$route['painting-work'] = "Main/painting";
+$route['refurbish-work'] = "Main/refurb";
+$route['other-work'] = "Main/other";
+$route['contact'] = "Main/contact";
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
