@@ -270,7 +270,7 @@ foreach(unserialize($data1['w_before']) as $data2):  ?>
                <p style="padding:20px;"> <?=$data1['w_before_explain']?> </p>
             </div>
             <br>
-            <div style="margin:auto;text-align:center;"><a href="<?=base_url()?>contact" class="btn btn-primary">Contact</a>
+            <div style="margin:auto;text-align:center;"><a href="<?=base_url()?>contact?type=construction" class="btn btn-primary">Contact</a>
           </div>
 
             <hr>

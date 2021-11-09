@@ -58,7 +58,27 @@ class Main extends CI_Controller {
         $this->load->view('theme/template/contents',$data);
 
     }
+    public function contactsubmit()
+    {    
+        $data = array(
+            'type' => $this->input->post('type'),
+            'name' => $this->input->post('name'),
+            'email' => $this->input->post('email'),
+            'message' => $this->input->post('message')
+        );
+        // print_r(json_encode($data));
 
+        $insert=$this->m->store('contact',$data);
+
+        if($insert){
+                redirect(base_url('contact'));
+        }else{
+            echo "Some thing went wrong";
+        }
+
+
+    }
+    
 
     
   
