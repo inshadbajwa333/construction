@@ -70,5 +70,10 @@ $route['refurbish-work'] = "Main/refurb";
 $route['other-work'] = "Main/other";
 $route['contact'] = "Main/contact";
 
+
+
+$route['view-contacts'] = "admin/Contacts";
+
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

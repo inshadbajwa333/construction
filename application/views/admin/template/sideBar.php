@@ -20,6 +20,8 @@
                   </li>
                 
                   <li><a class="nav-link menu-title link-nav" href="<?=base_url()?>all-users"><i data-feather="home"></i><span>Users</span></a></li>
+                  <li><a class="nav-link menu-title link-nav" href="<?=base_url()?>view-contacts"><i data-feather="home"></i><span>Contacts</span></a></li>
+                  
                 </ul>
               </div>
               <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
